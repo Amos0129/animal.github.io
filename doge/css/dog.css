@@ -1,0 +1,123 @@
+.test1 {animation:flash;animation-duration:3s;}
+		
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #f7b9a1;
+    color:black;
+    font-family: '標楷體','arial';
+}
+
+.box
+{
+    display: none;
+}
+
+.allbox{
+    height: 1200px;
+
+}
+        
+@media screen and (min-width: 1200px)
+{
+    .wrap
+    {
+        height: 1365px;
+        width: 1200px;
+        margin: auto;
+    }
+
+    .lg
+    {
+        display: block;
+        width: 350px;
+        height: 400px;
+        border:5px white solid;
+        margin: 10px;
+        padding: 10px;
+        float:left;
+        transition: .3s;
+    }
+
+    .box:hover
+    {
+        color:#123;
+        background-color: rgb(224, 187, 105);
+        border-color:rgb(90, 59, 2);
+        transform: scale(1.05);
+        border-radius: 50px;
+    }
+
+    .box h1
+    {
+        text-align: center;
+        text-transform: uppercase; /*英文字設定為大寫，此處為框框內標題開頭字*/
+        margin: 10px;
+    }
+
+    .box p
+    {
+        text-align: justify;
+        padding: 10px 20px;
+    }
+
+    .box a
+    {
+        color:black;
+        text-decoration: none;
+        display: block;
+        width: 150px;
+        height: 40px;
+        border:rgb(255, 255, 255) 2px  solid;
+        margin: auto;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 0px;
+        transition: .3s;
+    }
+    
+    .box:hover a
+    {
+        border-color:rgb(0, 0, 0);
+        border-radius: 50px;
+    }
+
+    .box a:hover
+    {
+        background-color: rgba(221, 210, 113, 0.945);
+        color:rgb(51, 33, 114);
+        transform: scale(1.1);
+    }
+
+    .box .imgBox
+    {
+        width: 350px;
+        height: 200px;
+        overflow:hidden;
+    }
+
+    .box img
+    {
+        width: 100%;
+        transition: .3s;
+    }
+
+    .box:hover img
+    {
+        transform: scale(1.2);
+    }
+
+    .clearfix
+    {
+        clear:both;
+        height: 100px;
+        background-color: tomato;
+        color:white;
+        text-align: center;
+        line-height: 100px;
+    }
+}
